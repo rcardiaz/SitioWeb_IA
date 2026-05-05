@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitioWeb-IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+   
+    <nav>   
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#que_es">Qué es la IA</a></li>
+            <li><a href="#como">Cómo funciona</a></li>
+            <li><a href="#tipo-ia">Tipos de IA</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+            </ul>   
+             </nav>
+   
+       </header>
+
+          
+<main>
+    <section id="inicio">
+        <h2 id="texto-ia"></h2> <p>Bienvenido al portal de Inteligencia Artificial.</p>
+    </section>
+
+    <section id="que_es">
+            <h2>¿Qué es la IA?</h2>
+         <div class="aprendiz">
+           <h3 >El Concepto de Aprendizaje</h3>  
+            <p>
+                Imagina que la <strong>IA es como un aprendiz infinitamente rápido</strong>. 
+                No es una persona, sino un programa que, en lugar de seguir órdenes fijas como una calculadora, 
+                aprende mirando ejemplos, tal como tú aprendiste a distinguir un perro de un gato viendo muchos de ellos.
+                </p>
+                 <p>IA--Capacidad de las máquinas para imitar la inteligencia humana.</p>
+            </div>
+            <div class="definicion">
+    
+                 <h3 style="margin-top: 0; color: #4A90E2; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Definición</h3>
+                <p style="font-size: 1.2rem; color: #333; margin-bottom: 0;">
+                    "La <strong>IA no es una máquina que piensa por sí misma</strong>, sino una herramienta que imita la forma
+                    en que los humanos aprendemos para ayudarnos a hacer las cosas más rápido."
+                </p>
+            </div>
+      </section>
+
+      <section id="como">
+        <h3 >El Concepto de Aprendizaje</h3>  
+      
+        <div class="card">
+            <div class="badge">Concepto Pro</div>
+                <div class="icon-circle">🧠</div>
+                <h2>¿Cómo funciona la IA?</h2>
+            <p>No es magia, es un proceso de aprendizaje continuo.</p>
+        
+            <div class="step-container">
+                <div class="step"><div class="dot"></div> <span><b>Entrada:</b> Mira datos</span></div>
+                <div class="step"><div class="dot"></div> <span><b>Proceso:</b> Busca patrones</span></div>
+                <div class="step"><div class="dot"></div> <span><b>Salida:</b> Toma decisiones</span></div>
+            </div>
+        </div>
+      </section>
+
+
+    <section id="tipo-ia">
+        <h2>Tipos de Inteligencia Artificial</h2>
+        <p>IA Débil, IA Fuerte y Superinteligencia.</p>
+
+        <h5 style="margin-bottom: 50px; text-align: center;">Niveles de Evolución de la IA</h5>
+
+        <div class="container">
+            <!-- IA DÉBIL -->
+            <div class="card1" onclick="updateLevel('ANI')">
+                <span class="power-level ani">Nivel 1: Actual</span>
+                <h2>IA Débil (ANI)</h2>
+                <p>Sistemas diseñados para realizar <strong>una sola tarea</strong> específica. No tienen conciencia ni entendimiento real fuera de su programación.</p>
+                <ul style="text-align: left; font-size: 0.85rem; color: #cbd5e1;">
+                    <li>Siri y Alexa</li>
+                    <li>Algoritmos de Netflix</li>
+                    <li>ChatGPT (actualmente)</li>
+                </ul>
+             </div>
+
+        <!-- IA FUERTE -->
+        <div class="card1" onclick="updateLevel('AGI')">
+            <span class="power-level agi">Nivel 2: Teórico</span>
+            <h2>IA Fuerte (AGI)</h2>
+            <p>Una IA con la capacidad de entender, aprender y aplicar su inteligencia a <strong>cualquier problema</strong>, igual que un ser humano.</p>
+            <ul style="text-align: left; font-size: 0.85rem; color: #cbd5e1;">
+                <li>Razonamiento abstracto</li>
+                <li>Conciencia de sí misma</li>
+                <li>Multitarea autónoma</li>
+            </ul>
+        </div>
+
+        <!-- SUPERINTELIGENCIA -->
+        <div class="card1" onclick="updateLevel('ASI')">
+            <span class="power-level asi">Nivel 3: Futuro</span>
+            <h2>Superinteligencia (ASI)</h2>
+            <p>Intelecto que supera con creces el rendimiento humano en <strong>todas las áreas</strong>, incluyendo creatividad y habilidades sociales.</p>
+            <ul style="text-align: left; font-size: 0.85rem; color: #babec2;">
+                <li>Resolución de problemas globales</li>
+                <li>Evolución tecnológica instantánea</li>
+                <li>Más allá de la comprensión humana</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="status" style="margin-top: 40px; font-style: italic; color: #64748b;">
+        Haz clic en una tarjeta para ver su impacto.
+    </div>
+    </section>
+
+    <script>
+        function updateLevel(type) {
+            const status = document.getElementById('status');
+            if(type === 'ANI') status.innerText = "Estado: Dominada. La usamos todos los días.";
+            if(type === 'AGI') status.innerText = "Estado: En desarrollo. Es el 'Santo Grial' de la IA.";
+            if(type === 'ASI') status.innerText = "Estado: Hipotético. Podría ser el último invento de la humanidad.";
+        }
+    </script>
+    </section>
+
+   
+
+    <section id="aplicaciones">
+        <header>
+            <h1>IA: El Asistente Invisible</h1>
+            <p>Resumen de impacto en tu rutina diaria</p>
+        </header>
+      <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Aplicación Real</th>
+                        <th>Beneficio Directo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>📱 Móvil</strong></td>
+                        <td>FaceID y Teclado</td>
+                        <td>Seguridad rápida y escritura fluida.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🎬 Ocio</strong></td>
+                        <td>Algoritmos (Netflix/TikTok)</td>
+                        <td>Contenido 100% personalizado.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🚗 Viajes</strong></td>
+                        <td>Google Maps / Uber</td>
+                        <td>Rutas rápidas y precios dinámicos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>💼 Trabajo</strong></td>
+                        <td>Filtros Spam / DeepL</td>
+                        <td>Bandeja limpia y traducción precisa.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🛡️ Finanzas</strong></td>
+                        <td>Detección de Fraude</td>
+                        <td>Protección de dinero en tiempo real.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+               <p>💡 <strong>Dato curioso:</strong> Se estima que una persona promedio interactúa con sistemas de IA entre 30 y 50 veces al día sin ser consciente de ello.
+            </p>
+    
+    </section>
+
+    <section id="contactos">
+      <h2>Ponte en contacto</h2>
+      <div class="contacto-contenedor">
+    
+        <!-- Información de contacto rápida -->
+        <div class="info-contacto">
+            <p><strong>Ubicación:</strong> San Salvador, El Salvador</p>
+            <p><strong>Email:</strong> tu-reinadm001@gmail.com</p>
+            <p><strong>WhatsApp:</strong> +503 7870-7390</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+      <p>&copy; 2026 ReinaDíaz. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

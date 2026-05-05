@@ -1,0 +1,278 @@
+
+html {
+    scroll-behavior: smooth; /* Tipo de desplazamiento al hacer clic */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* ENCABEZADO Y MENÚ */
+header {
+    background-color: white;
+    padding: 20px 0;
+    position: sticky; /* Se queda fijo arriba al bajar */
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+h1 {
+    text-align: center;
+    color: #1544df;
+    margin-bottom: 15px;
+}
+
+h2 {color: #2c3e50;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+h3{ margin-top: 0;
+    }
+nav ul li a {
+    text-decoration: none;
+    color: #141313;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* SECCIONES ESTILO "PÁGINA COMPLETA" */
+section {
+    min-height: 100vh; /* 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* COLORES DE FONDO PARA NOTAR EL CAMBIO */
+#inicio {
+    background-color: #ffffff;
+}
+
+#ques_es {
+    background-color: #f0f4f8; /* Azul muy pálido */
+}
+
+#tipo-ia {
+    background-color: #e8f5e9; /* Verde muy pálido */
+}
+
+/* ESTILO DEL TEXTO QUE ESCRIBE EL JS */
+#texto-ia {
+    font-size: 2.5rem;
+    color: #15df15; /* Verde brillante */
+    margin-bottom: 10px;
+}
+
+.aprendiz{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid #eee;
+    background-color: white
+}
+.definicion { 
+   
+   font-family: 'Segoe UI', Roboto, sans-serif;
+                max-width: 500px;
+                margin: 40px auto;
+                padding: 30px;
+                background-color: #ffffff;
+                border-left: 6px solid #4A90E2;
+                 box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+                border-radius: 8px;
+                 line-height: 1.6;
+    }
+
+    p{color: #444;}
+
+/*Como funciona*/
+    .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 2rem;
+            width: 320px;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: var(--primary);
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+        }
+
+        h2 { margin: 0; font-size: 1.5rem; color: #63a7eb; }
+        p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+
+        .step-container {
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .card:hover .step { opacity: 1; }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+
+        /*Tipos*/
+        .card1 {
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-color: var(--primary);
+        }
+
+        .card1 h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .card1 p {
+            line-height: 1.6;
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .power-level {
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Colores específicos por tipo */
+        .ani { color: #38bdf8; } /* Débil */
+        .agi { color: #fbbf24; } /* Fuerte */
+        .asi { color: #f43f5e; } /* Super */
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+/*aplicaciones*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #5f6368;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+tr:hover {
+    background-color: #f1f7fe;
+    transition: 0.2s;
+}
+
+footer {
+  margin-top: 50px; 
+  border: 2px solid rgb(194, 113, 14); /* Esto es solo para encontrarlo visualmente */
+  text-align-last: right;
+}
