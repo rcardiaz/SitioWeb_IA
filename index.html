@@ -3,110 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SitioWeb-IA</title>
+    <title>SitioWeb-IA | Innovación Tecnológica</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <!--SECCIÓN: HEADER-MENÚS-->
-    <nav>   
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#encuesta">Encuesta</a></li>
-            <li><a href="#que_es">Qué es la IA</a></li>
-            <li><a href="#como">Cómo funciona</a></li>
-            <li><a href="#tipo-ia">Tipos de IA</a></li>
-            <li><a href="#aplicaciones">Aplicaciones</a></li>
-            <li><a href="#contactos">Contactos</a></li>
+    <h1>Portal de Inteligencia Artificial</h1>
+        <nav>   
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que_es">Qué es</a></li>
+                <li><a href="#como">Funcionamiento</a></li>
+                <li><a href="#tipo-ia">Tipos</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#encuesta">Encuesta</a></li> 
+                <li><a href="#contactos">Contacto</a></li>
             </ul>   
-             </nav>
-   
-       </header>
+        </nav>
+      </header>
 
-          
+         
 <main>
     <section id="inicio">
-        <h2 id="texto-ia"></h2> <p>Bienvenido al portal de Inteligencia Artificial.</p>
+        <article>
+                <h2 id="texto-ia"></h2>
+                <p>Bienvenido al portal educativo sobre Inteligencia Artificial. Explore cómo los algoritmos están transformando nuestro mundo digital y físico a través del procesamiento de datos masivos.</p>
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600" alt="Representación visual de redes neuronales digitales y circuitos" class="img-hero">
+            </article>
     </section>
 
-    <!-- SECCIÓN: ENCUESTA -->
-    <section id="encuesta">
-        <h2>Preguntas sobre IA...</h2>
-            <form id="ia-form">
-                    <label>1. ¿Qué entiendes por Inteligencia Artificial en una frase?</label>
-                    <input type="text" name="definicion-ia" placeholder="Tu respuesta aquí..." required>
-                    <label>2. ¿Cuál de estas herramientas de IA has utilizado más?</label>
-                    <div class="radio-group" requeried>
-                        <label><input type="radio" name="herramienta-ia" value="ChatGPT"> ChatGPT</label>
-                        <label><input type="radio" name="herramienta-ia" value="Gemini"> Gemini</label>
-                        <label><input type="radio" name="herramienta-ia" value="Ninguna"> Ninguna</label>
-                        <label><input type="radio" name="herramienta-ia" value="Todas"> Todas</label>
-                    </div> 
-                  <label>3. Del 1 al 5, ¿Cuánto confías en la información que da una IA?</label>
-                    <input type="range" id="confianza" name="confianza" min="1" max="5" list="markers" requered>
- 
-                   <datalist id="markers">
-                         <option value="1"></option>
-                         <option value="2"></option>
-                         <option value="3"></option>
-                         <option value="4"></option>
-                         <option value="5"></option>
-                    </datalist>
-                 <button type="submit" class="boton">Enviar</button>
-            </form>
-
-            <script src="form.js"></script>
-    </section>
-
-         <!-- SECCIÓN: ¿QUÉ ES LA IA?-->
-    <section id="que_es">
+        <section id="que_es">
             <h2>¿Qué es la IA?</h2>
-         <div class="aprendiz">
-           <h3 >El Concepto de Aprendizaje</h3>  
-            <p>
-                Imagina que la <strong>IA es como un aprendiz infinitamente rápido</strong>. 
-                No es una persona, sino un programa que, en lugar de seguir órdenes fijas como una calculadora, 
-                aprende mirando ejemplos, tal como tú aprendiste a distinguir un perro de un gato viendo muchos de ellos.
-                </p>
-                 <p>IA--Capacidad de las máquinas para imitar la inteligencia humana.</p>
-            </div>
-            <div class="definicion">
-    
-                 <h3 style="margin-top: 0; color: #4A90E2; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Definición</h3>
-                <p style="font-size: 1.2rem; color: #333; margin-bottom: 0;">
-                    "La <strong>IA no es una máquina que piensa por sí misma</strong>, sino una herramienta que imita la forma
-                    en que los humanos aprendemos para ayudarnos a hacer las cosas más rápido."
-                </p>
+            <div class="container-grid">
+                <article class="aprendiz">
+                    <h3>El Concepto de Aprendizaje</h3>  
+                    <p>La IA es un campo de la informática que busca crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de voz o la toma de decisiones.</p>
+                    <p><strong>Clave:</strong> Capacidad de las máquinas para imitar procesos cognitivos.</p>
+                </article>
+
+                <aside class="definicion-destacada">
+                    <h3>Definición Técnica</h3>
+                    <blockquote>
+                        "La IA es una herramienta que imita la forma en que los humanos aprendemos para optimizar procesos complejos."
+                    </blockquote>
+                </aside>
             </div>
       </section>
 
-      <!-- SECCIÓN: CÓMO FUNCIONA LA IA -->
       <section id="como">
-        <h2 >El Concepto de Aprendizaje</h3>  
-       <br>
         <div class="card">
-            <div class="badge">Concepto Pro</div>
+                <div class="badge">Procesamiento</div>
                 <div class="icon-circle">🧠</div>
-                <h1>¿Cómo funciona la IA?</h2>
-            <p>No es magia, es un proceso de aprendizaje continuo.</p>
-        
-            <div class="step-container">
-                <div class="step"><div class="dot"></div> <span><b>Entrada:</b> Mira datos</span></div>
-                <div class="step"><div class="dot"></div> <span><b>Proceso:</b> Busca patrones</span></div>
-                <div class="step"><div class="dot"></div> <span><b>Salida:</b> Toma decisiones</span></div>
+                <h2>¿Cómo funciona la IA?</h2>
+                <p>No es magia, es un ciclo de tres pasos fundamentales basados en matemáticas y estadística:</p>
+                
+                <div class="step-container">
+                    <div class="step"><div class="dot"></div> <span><b>Entrada:</b> Recolección de grandes volúmenes de datos (Big Data).</span></div>
+                    <div class="step"><div class="dot"></div> <span><b>Proceso:</b> Identificación de patrones mediante algoritmos.</span></div>
+                    <div class="step"><div class="dot"></div> <span><b>Salida:</b> Generación de una predicción o respuesta lógica.</span></div>
+                </div>
             </div>
-        </div>
       </section>
-
-      <!-- SECCIÓN: TIPOS DE IA -->
-    <section id="tipo-ia">
+     
+      <section id="tipo-ia">
         <h2>Tipos de Inteligencia Artificial</h2>
         <p>IA Débil, IA Fuerte y Superinteligencia.</p>
         <h1 style="margin-bottom: 50px; text-align: center;">Niveles de Evolución de la IA</h5>
         <div class="container">
-            <!-- IA DÉBIL -->
             <div class="card1" onclick="updateLevel('ANI')">
                 <span class="power-level ani">Nivel 1: Actual</span>
                 <h2>IA Débil (ANI)</h2>
@@ -118,7 +83,6 @@
                 </ul>
              </div>
 
-        <!-- IA FUERTE -->
         <div class="card1" onclick="updateLevel('AGI')">
             <span class="power-level agi">Nivel 2: Teórico</span>
             <h2>IA Fuerte (AGI)</h2>
@@ -130,7 +94,6 @@
             </ul>
         </div>
 
-        <!-- SUPERINTELIGENCIA -->
         <div class="card1" onclick="updateLevel('ASI')">
             <span class="power-level asi">Nivel 3: Futuro</span>
             <h2>Superinteligencia (ASI)</h2>
@@ -147,7 +110,6 @@
     </div>
     </section>
 
-    <!-- SECCIÓN: TIPOS DE IA - INTERACTIVO-AL HACER CLIC EN CADA TARJETA, SE ACTUALIZA EL TEXTO DE ESTADO ABAJO -->
     <script>
         function updateLevel(type) {
             const status = document.getElementById('status');
@@ -159,8 +121,10 @@
     </section>
 
      
-        <!-- SECCIÓN: APLICACIONES DE LA IA -->
-    <section id="aplicaciones">
+    
+    
+
+        <section id="aplicaciones">
         <h2>IA: El Asistente Invisible</h1>
          <p>Resumen de impacto en tu rutina diaria</p>
       <div class="table-container">
@@ -205,30 +169,62 @@
             </p>
     
     </section>
-
-    <!-- SECCIÓN: CONTACTOS-->   
-    <section id="contactos">
-      <h2>Ponte en contacto</h2>
-      <div class="contacto-contenedor">
+<section id="encuesta">
+    <h2>Consulta sobre Innovación</h2>
+    <p>Ayúdanos a entender tu percepción sobre la IA completando este formulario.</p>
     
-        <!-- Información de contacto rápida -->
-        <div class="info-contacto">
-            <p><strong>Ubicación:</strong> San Salvador, El Salvador</p>
-            <p><strong>Email:</strong> tu-reinadm001@gmail.com</p>
-            <p><strong>WhatsApp:</strong> +503 7870-7390</p>
+    <form id="ia-form">
+        <div class="form-group">
+            <label for="nombre_usuario">Nombre Completo:</label>
+            <input type="text" id="nombre_usuario" name="nombre" placeholder="Ej: Reina Díaz" required>
         </div>
-    </section>
+
+        <div class="form-group">
+            <label for="correo_usuario">Correo Electrónico:</label>
+            <input type="email" id="correo_usuario" name="email" placeholder="usuario@correo.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="definicion_ia">¿Qué es para ti la IA en una frase?</label>
+            <input type="text" id="definicion_ia" name="definicion" placeholder="Tu opinión aquí..." required>
+        </div>
+
+        <div class="form-group">
+            <label>¿Has utilizado herramientas de IA?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="uso_ia" value="si" required> Sí, diariamente</label>
+                <label><input type="radio" name="uso_ia" value="no"> No, nunca</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="nivel_confianza">¿Cuánto confías en la IA? (1 al 5):</label>
+            <input type="range" id="nivel_confianza" name="confianza" min="1" max="5" value="3">
+            <div class="range-labels">
+                <span>Poco</span>
+                <span>Mucho</span>
+            </div>
+        </div>
+
+        <button type="submit" class="boton">Enviar mis respuestas</button>
+    </form>
+        <script src="form.js"></script>
+</section>
+   <section id="contactos">
+            <h2>Contacto</h2>
+            <div class="info-contacto">
+                <p>📍 <strong>Ubicación:</strong> San Salvador, El Salvador</p>
+                <p>📧 <strong>Email:</strong> contacto@tecnologia.com</p>
+                <p>💬 <strong>WhatsApp:</strong> +503 7000-0000</p>
+            </div>
+        </section>
 
 </main>
 
-<!-- SECCIÓN: FOOTER -->
 <footer>
       <p>&copy; 2026 ReinaDíaz. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js"></script>
-
-
-
 </body>
 </html>
